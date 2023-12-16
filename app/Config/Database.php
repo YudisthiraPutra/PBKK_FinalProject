@@ -29,7 +29,7 @@ class Database extends Config
         'hostname' => '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock',
         'username' => 'root',
         'password' => '',
-        'database' => 'ticketmovie',
+        'database' => 'hotel',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
