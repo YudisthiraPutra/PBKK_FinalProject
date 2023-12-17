@@ -55,6 +55,7 @@ class Order extends Controller
             $reservationDates,
             ['Pelanggan_NIK_Pelanggan' => $contactInfo['NIK_Pelanggan'], 'Waktu_Transaksi' => $currentTimestamp]
         );
+        $transaksiModel->insert($transaksiData);
         $roomPrice = $kamarModel->getRoomPriceByType($reservationDates['Kamar_ID_Kamar']);
         // Insert data into Transaksi table with the associated pelanggan_id
         session()->setFlashdata('checkin', $reservationDates['CheckIn_Transaksi']);
