@@ -23,7 +23,7 @@
         >
           <h4>Login</h4>
           <input type="text" name="email" placeholder="Email" />
-          <input type="text" name="password" placeholder=" Password" />
+          <input type="password" name="password" placeholder=" Password" />
           <input type="submit" value="Login" id="submit" />
         </form>
         <a href="/register">Dont have an account?</a>

@@ -24,7 +24,7 @@
           <h4>Register</h4>
           <input type="text" name="name" placeholder="Name" />
           <input type="text" name="email" placeholder="Email" />
-          <input type="text" name="password" placeholder=" Password" />
+          <input type="password" name="password" placeholder=" Password" />
           <input type="submit" value="Register" id="submit" />
         </form>
         <a href="">have an account?</a>

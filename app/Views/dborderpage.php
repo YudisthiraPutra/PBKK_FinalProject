@@ -27,7 +27,7 @@
               <th colspan="1">Full Name</th>
               <th colspan="1">Check In</th>
               <th colspan="1">Check Out</th>
-              <th colspan="1">Employees Name</th>
+              <th colspan="1">Room Type</th>
             </tr>
           </thead>
           <tbody>
