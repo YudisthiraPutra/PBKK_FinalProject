@@ -1,0 +1,166 @@
+ERROR - 2023-12-17 12:24:29 --> mysqli_sql_exception: Table 'hotel.user' doesn't exist in D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\VSCODE\PBKK\PBKK_FinalProject\app\Models\UserModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\VSCODE\PBKK\PBKK_FinalProject\app\Controllers\Auth.php(21): App\Models\UserModel->authenticateUser('admin@gmail.com', 'Admin')
+#6 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(942): App\Controllers\Auth->processLogin()
+#7 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\VSCODE\PBKK\PBKK_FinalProject\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\VSCODE\PBKK\PBKK_FinalProject\system\Commands\Server\rewrite.php(47): require_once('D:\\VSCODE\\PBKK\\...')
+#11 {main}
+CRITICAL - 2023-12-17 12:24:29 --> Table 'hotel.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email_user` = :email_user:
+AND `password` = :password:', [...], false)
+ 2 APPPATH\Models\UserModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Auth.php(21): App\Models\UserModel->authenticateUser('admin@gmail.com', 'Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->processLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\VSCODE\\PBKK\\PBKK_FinalProject\\public\\index.php')
+ERROR - 2023-12-17 12:24:35 --> mysqli_sql_exception: Table 'hotel.user' doesn't exist in D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\VSCODE\PBKK\PBKK_FinalProject\app\Models\UserModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\VSCODE\PBKK\PBKK_FinalProject\app\Controllers\Auth.php(21): App\Models\UserModel->authenticateUser('admin@gmail.com', 'Admin')
+#6 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(942): App\Controllers\Auth->processLogin()
+#7 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\VSCODE\PBKK\PBKK_FinalProject\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\VSCODE\PBKK\PBKK_FinalProject\system\Commands\Server\rewrite.php(47): require_once('D:\\VSCODE\\PBKK\\...')
+#11 {main}
+CRITICAL - 2023-12-17 12:24:35 --> Table 'hotel.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `email_user` = :email_user:
+AND `password` = :password:', [...], false)
+ 2 APPPATH\Models\UserModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Auth.php(21): App\Models\UserModel->authenticateUser('admin@gmail.com', 'Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->processLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\VSCODE\\PBKK\\PBKK_FinalProject\\public\\index.php')
+ERROR - 2023-12-17 12:40:35 --> mysqli_sql_exception: Table 'hotel.pegawai' doesn't exist in D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\VSCODE\PBKK\PBKK_FinalProject\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\VSCODE\PBKK\PBKK_FinalProject\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\VSCODE\PBKK\PBKK_FinalProject\app\Controllers\Hotel.php(37): CodeIgniter\BaseModel->findAll()
+#7 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(942): App\Controllers\Hotel->staffdata()
+#8 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hotel))
+#9 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\VSCODE\PBKK\PBKK_FinalProject\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\VSCODE\PBKK\PBKK_FinalProject\system\Commands\Server\rewrite.php(47): require_once('D:\\VSCODE\\PBKK\\...')
+#12 {main}
+CRITICAL - 2023-12-17 12:40:35 --> Table 'hotel.pegawai' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Pegawai`
+ORDER BY `NIK_Pegawai` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Hotel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Hotel->staffdata()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hotel))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\VSCODE\\PBKK\\PBKK_FinalProject\\public\\index.php')
+ERROR - 2023-12-17 12:45:58 --> mysqli_sql_exception: Table 'hotel.pegawai' doesn't exist in D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\VSCODE\PBKK\PBKK_FinalProject\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\VSCODE\PBKK\PBKK_FinalProject\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\VSCODE\PBKK\PBKK_FinalProject\app\Controllers\Hotel.php(37): CodeIgniter\BaseModel->findAll()
+#7 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(942): App\Controllers\Hotel->staffdata()
+#8 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hotel))
+#9 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\VSCODE\PBKK\PBKK_FinalProject\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\VSCODE\PBKK\PBKK_FinalProject\system\Commands\Server\rewrite.php(47): require_once('D:\\VSCODE\\PBKK\\...')
+#12 {main}
+CRITICAL - 2023-12-17 12:45:58 --> Table 'hotel.pegawai' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Pegawai`
+ORDER BY `NIK_Pegawai` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Hotel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Hotel->staffdata()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Hotel))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\VSCODE\\PBKK\\PBKK_FinalProject\\public\\index.php')
+ERROR - 2023-12-17 13:35:26 --> mysqli_sql_exception: Duplicate entry '3316051122330009' for key 'PRIMARY' in D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `Pe...', 0)
+#1 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pe...')
+#2 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pe...')
+#3 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pe...', Array, false)
+#4 D:\VSCODE\PBKK\PBKK_FinalProject\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\VSCODE\PBKK\PBKK_FinalProject\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\VSCODE\PBKK\PBKK_FinalProject\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\VSCODE\PBKK\PBKK_FinalProject\app\Controllers\Order.php(50): CodeIgniter\Model->insert(Array)
+#8 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(942): App\Controllers\Order->submitOrder()
+#9 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#10 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\VSCODE\PBKK\PBKK_FinalProject\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\VSCODE\PBKK\PBKK_FinalProject\system\Commands\Server\rewrite.php(47): require_once('D:\\VSCODE\\PBKK\\...')
+#13 {main}
+CRITICAL - 2023-12-17 13:35:26 --> Duplicate entry '3316051122330009' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pelanggan` (`Nama_Pelanggan`, `Telp_Pelanggan`, `NIK_Pelanggan`) VALUES (:Nama_Pelanggan:, :Telp_Pelanggan:, :NIK_Pelanggan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Order.php(50): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Order->submitOrder()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\VSCODE\\PBKK\\PBKK_FinalProject\\public\\index.php')
+ERROR - 2023-12-17 13:35:55 --> mysqli_sql_exception: Duplicate entry '3316051122330009' for key 'PRIMARY' in D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `Pe...', 0)
+#1 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pe...')
+#2 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pe...')
+#3 D:\VSCODE\PBKK\PBKK_FinalProject\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pe...', Array, false)
+#4 D:\VSCODE\PBKK\PBKK_FinalProject\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\VSCODE\PBKK\PBKK_FinalProject\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\VSCODE\PBKK\PBKK_FinalProject\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\VSCODE\PBKK\PBKK_FinalProject\app\Controllers\Order.php(50): CodeIgniter\Model->insert(Array)
+#8 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(942): App\Controllers\Order->submitOrder()
+#9 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#10 D:\VSCODE\PBKK\PBKK_FinalProject\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\VSCODE\PBKK\PBKK_FinalProject\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\VSCODE\PBKK\PBKK_FinalProject\system\Commands\Server\rewrite.php(47): require_once('D:\\VSCODE\\PBKK\\...')
+#13 {main}
+CRITICAL - 2023-12-17 13:35:55 --> Duplicate entry '3316051122330009' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pelanggan` (`Nama_Pelanggan`, `Telp_Pelanggan`, `NIK_Pelanggan`) VALUES (:Nama_Pelanggan:, :Telp_Pelanggan:, :NIK_Pelanggan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Order.php(50): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Order->submitOrder()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\VSCODE\\PBKK\\PBKK_FinalProject\\public\\index.php')

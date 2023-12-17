@@ -33,7 +33,12 @@
             <p class="num">20</p>
           </div>
           <div class="preview">
-            <p class="title">Reserved to Grand Celestial</p>
+            <a
+              style="color: white; margin: 0 auto; text-decoration: underline"
+              class="backbutton"
+              href="/"
+              >Go To Home Page</a
+            >
           </div>
         </div>
       </div>
